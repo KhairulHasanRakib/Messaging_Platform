@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fantasy Chat UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Fantasy Chat Bubble</h2>
+    <div class="chat-container">
+        <div class="avatar-container" id="avatar1">
+            <div class="avatar boy"></div>
+            <div class="message-cloud" id="msg1"></div>
+        </div>
+        <div class="avatar-container" id="avatar2">
+            <div class="avatar girl"></div>
+            <div class="message-cloud" id="msg2"></div>
+        </div>
+    </div>
+
+    <div class="input-area">
+        <select id="sender">
+            <option value="1">Boy</option>
+            <option value="2">Girl</option>
+        </select>
+        <input type="text" id="message" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #eef1f5;
+  padding: 20px;
+}
+
+.chat-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  position: relative;
+}
+
+.avatar-container {
+  position: relative;
+  width: 150px;
+  height: 200px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #ccc;
+}
+
+.boy {
+  background-image: url('https://i.ibb.co/4f4F9VZ/boy.png');
+}
+
+.girl {
+  background-image: url('https://i.ibb.co/LNCdXvR/girl.png');
+}
+
+.message-cloud {
+  position: absolute;
+  top: -60px;
+  left: 10px;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  min-width: 80px;
+  display: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.message-cloud::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 30px;
+  border-top: 10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.input-area {
+  margin-top: 40px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #2e8bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1864c9;
+}
